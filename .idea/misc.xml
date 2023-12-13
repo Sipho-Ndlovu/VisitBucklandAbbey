@@ -1,0 +1,24 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/drawable/email_icon.xml" value="0.2265" />
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/drawable/first_icon.xml" value="0.2265" />
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/drawable/last_icon.xml" value="0.2265" />
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/drawable/person_outline_icon.xml" value="0.2265" />
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/layout/activity_admin_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/layout/activity_attractions_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/layout/activity_home_page.xml" value="0.264" />
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/layout/activity_registration_page.xml" value="0.264" />
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/layout/admin_create_popup_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/layout/admin_popup_page.xml" value="0.264" />
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/layout/attractions_list_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Sipsn/Documents/GitHub/comp2000-main-assignment-siipsndlovu/Android App/app/src/main/res/layout/attractions_page_list_layout.xml" value="0.6923076923076923" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

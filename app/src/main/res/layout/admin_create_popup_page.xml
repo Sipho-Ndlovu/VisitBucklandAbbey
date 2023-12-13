@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="New Attraction"
+        android:textColor="#b7ad89"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#300558ab"
+        android:drawablePadding="20dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="#b7ad89"
+        android:textColorHint="#b7ad89" />
+
+    <EditText
+        android:id="@+id/Facilities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#300558ab"
+        android:drawablePadding="20dp"
+        android:hint="Facilities"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="#b7ad89"
+        android:textColorHint="#b7ad89" />
+
+    <EditText
+        android:id="@+id/OpeningTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Facilities"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#300558ab"
+        android:drawablePadding="20dp"
+        android:hint="Opening Time"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="#b7ad89"
+        android:textColorHint="#b7ad89" />
+
+    <EditText
+        android:id="@+id/TicketPrices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OpeningTime"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#300558ab"
+        android:drawablePadding="20dp"
+        android:hint="Ticket Prices"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="#b7ad89"
+        android:textColorHint="#b7ad89" />
+
+    <EditText
+        android:id="@+id/HistoricalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TicketPrices"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#300558ab"
+        android:hint="Historical Information"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="#b7ad89"
+        android:textColorHint="#b7ad89" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HistoricalInfo"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#0558ab"
+            android:text="Add"
+            android:textColor="#b7ad89" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#0558ab"
+            android:text="Cancel"
+            android:textColor="#b7ad89" />
+    </LinearLayout>
+
+</RelativeLayout>

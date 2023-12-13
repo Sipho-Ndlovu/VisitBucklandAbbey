@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#0558ab" >
+
+        <TextView
+            android:id="@+id/Logo"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Visit Buckland Abbey"
+            android:textColor="#b7ad89"
+            android:padding="5dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/btnHome"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Home"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:id="@+id/btnAttractions"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Attractions"
+            android:gravity="center"
+            android:textColor="#b7ad89"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/btnAdmin"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Admin"
+            android:gravity="center"
+            android:textColor="#b7ad89"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/btnProfile"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Profile"
+            android:drawableTop="@drawable/person_circle_icon"
+            android:gravity="center"
+            android:textColor="#b7ad89"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Header"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="#b7ad89"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/InfoLayout"
+        android:layout_below="@id/Welcome"
+        android:layout_centerHorizontal="true"
+        android:background="#300558ab" >
+
+        <TextView
+            android:id="@+id/Intro"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Founded in 1278 by the Countess of Devon, Buckland Abbey served as a church until 1541 when King Henry VIII sold it to one of his Lords..."
+            android:textColor="#b7ad89"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Middle"
+            android:layout_below="@+id/Intro"
+            android:padding="7dp"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:text="Ownership of the Abbey changed hands several times after that with the Abbey also being redeveloped multiple times during that period.. "
+            android:textColor="#b7ad89" />
+
+        <TextView
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/End"
+            android:layout_below="@+id/Middle"
+            android:padding="7dp"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:text="Nowadays the beautiful grounds of the Abbey are accessible to the public as a cultural site, This App will provide you with all the information required to plan your own amazing visit to Buckland Abbey... "
+            android:textColor="#b7ad89" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:id="@+id/Image"
+            android:layout_below="@id/End"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/buckland_abbey" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

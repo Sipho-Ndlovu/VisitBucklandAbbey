@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegistrationPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Register"
+        android:text="Register Account"
+        android:textStyle="bold"
+        android:textColor="#b7ad89"
+        android:textSize="35dp"
+        android:layout_margin="20dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/StudentID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="25dp"
+        android:background="#300558ab"
+        android:digits="11234567890"
+        android:drawableLeft="@drawable/person_outline_icon_blue"
+        android:drawablePadding="20dp"
+        android:hint="StudentID"
+        android:padding="20dp"
+        android:textColor="#0558ab"
+        android:textColorHint="#0558ab" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FirstName"
+        android:layout_below="@+id/StudentID"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        android:hint="First Name"
+        android:background="#300558ab"
+        android:textColor="#b7ad89"
+        android:textColorHint="#b7ad89"
+        android:drawableLeft="@drawable/first_icon"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="25dp"
+        android:padding="20dp"
+        android:drawablePadding="20dp" />
+
+    <EditText
+        android:id="@+id/LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FirstName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="25dp"
+        android:background="#300558ab"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        android:drawableLeft="@drawable/last_icon"
+        android:drawablePadding="20dp"
+        android:hint="Last Name"
+        android:padding="20dp"
+        android:textColor="#0558ab"
+        android:textColorHint="#0558ab" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LastName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#0558ab"
+        android:text="Register"
+        android:textColor="#b7ad89"
+        android:onClick="RunReg" />
+
+</RelativeLayout>

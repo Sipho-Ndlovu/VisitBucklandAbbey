@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttractionsPage"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#0558ab">
+
+        <TextView
+            android:id="@+id/Logo"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:text="Visit Buckland Abbey"
+            android:textColor="#b7ad89" />
+
+        <TextView
+            android:id="@+id/btnHome"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Home"
+            android:textColor="#b7ad89" />
+
+        <TextView
+            android:id="@+id/btnAttractions"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Attractions"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/btnAdmin"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Admin"
+            android:textColor="#b7ad89" />
+
+        <TextView
+            android:id="@+id/btnProfile"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:drawableTop="@drawable/person_circle_icon"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Profile"
+            android:textColor="#b7ad89" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Header"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Attractions"
+        android:textColor="#b7ad89"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Click on the attractions below to see their information..."
+        android:textColor="#0558ab"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/Body"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_below="@id/Instructions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp">
+
+        <ScrollView
+            android:id="@+id/RecyclerBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#300558ab">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/AttractionsList3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="500dp"
+                android:padding="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/textBody"
+            android:layout_width="190dp"
+            android:layout_height="500dp"
+            android:layout_marginLeft="20dp"
+            android:background="#300558ab">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="#b7ad89"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Facilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="#b7ad89"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/OpeningTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Facilities"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="#b7ad89"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/TicketPrices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/OpeningTime"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="#b7ad89"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/HistoricalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TicketPrices"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="#b7ad89"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

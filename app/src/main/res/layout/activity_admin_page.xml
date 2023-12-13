@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AdminPage">
+
+    <LinearLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#0558ab" >
+
+        <TextView
+            android:id="@+id/Logo"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Visit Buckland Abbey"
+            android:textColor="#b7ad89"
+            android:padding="5dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/btnHome"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Home"
+            android:gravity="center"
+            android:textColor="#b7ad89"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:id="@+id/btnAttractions"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Attractions"
+            android:gravity="center"
+            android:textColor="#b7ad89"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/btnAdmin"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Admin"
+            android:gravity="center"
+            android:textColor="#FFFF"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/btnProfile"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Profile"
+            android:drawableTop="@drawable/person_circle_icon"
+            android:gravity="center"
+            android:textColor="#b7ad89"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#0558ab"
+        android:drawableLeft="@drawable/add_icon"
+        android:text="Create New Attraction"
+        android:textColor="#b7ad89" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCreate">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/AttractionsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
+</RelativeLayout>
